@@ -1,6 +1,16 @@
+$btnPrimaryBackground: blue;
+$navbarBackgroundHighlight: white;
+$navbarBackground:  white;
+
 @import 'bootstrap';
 
 @import 'bootstrap-responsive';
+
+
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
 
 body {
 	padding-top: 40px;
