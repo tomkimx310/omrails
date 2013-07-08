@@ -1,0 +1,15 @@
+@import 'bootstrap';
+
+@import 'bootstrap-responsive';
+
+body {
+	padding-top: 40px;
+}
+
+.footer {
+	margin-top: 40px;
+	color: $grayLight;
+	a {
+		color: gray;
+	}
+}
