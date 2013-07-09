@@ -1,9 +1,13 @@
-<div class="hero-unit">
-	<h1>Welcome to Footprint!</h1>
-	<p>
-		You've found the home to the <%= link_to "Footprint", "http://footprint.is" %> web application for membership-based businesses. 
-	</p>
-	<p>
-		<%= link_to "Sign Up Now!", "#", class: "btn btn-primary btn-large" %>
-	</p>
-</div>
+<% if user_signed_in? %>
+	<h1>Hey there, welcome back!</h1>
+<% else %>
+	<div class="hero-unit">
+		<h1>Welcome to Footprint!</h1>
+		<p>
+			You've found the home to the <%= link_to "Footprint", "http://footprint.is" %> web application for membership-based businesses. 
+		</p>
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		</p>
+	</div>
+<% end %>
